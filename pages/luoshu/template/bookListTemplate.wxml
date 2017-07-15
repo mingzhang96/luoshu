@@ -1,0 +1,104 @@
+<template name="bookListTemplate">
+  <view class="book-list-container" data-bookssid="{{book_sid}}">
+    <view class="inner-container">
+
+      <!--书名 和 收藏按钮 -->
+      <view class="book-head">
+        <text class="bookName">{{book_title}}</text>
+        
+      </view>
+      <!--书的内容简介 -->
+      <view class="book-summary">
+        <text class="bookSummary">索书号： {{book_clc}}</text>
+      </view>
+      <view class="book-summary">
+        <text class="bookSummary">搜索次数：  {{book_times}}</text>
+      </view>
+      <view class="hr"></view>
+
+    </view>
+  </view>
+</template>
+
+
+<template name="starbookListTemplate">
+  <view class="book-list-container">
+    <view class="inner-container">
+
+      <!--书名 和 收藏按钮 -->
+      <view class="book-head">
+        <text class="bookName">{{bookName}}</text>
+      </view>
+      <!--书的内容简介 -->
+      <view class="book-summary">
+        <text class="bookSummary">{{bookSummary}}</text>
+      </view>
+      <view class="hr"></view>
+
+    </view>
+  </view>
+</template>
+
+<template name="bookBorrowTemplate">
+  <view class="book-borrow-container">
+    <view class="book-head">
+      <text class="bookName">{{book_title}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">书籍编码   </text>
+      <text>{{book_barcode}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">典藏部门   </text>
+      <text>{{department_name}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">流通状态   </text>
+      <text>{{liutong}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">应还日期   </text>
+      <text>{{should_return_date}}</text>
+      <button type="primary" size="default" loading="{{loading}}" bindtap="bindXujie" data-xuhao="{{book_xuhao}}"> 续借 </button>
+    </view>
+
+    <view class="hr"></view>
+
+  </view>
+</template>
+
+<template name="bookGridTemplate">
+  <view class="grid-container" data-bookSid="{{book_sid}}">
+      <view class="single-view-container">
+        <view class="book-head">
+          <text class="bookName">{{book_title}}</text>
+        </view>
+        <view class="flex-row">
+          <text class="mark">作者</text>
+          <text>{{book_authors}}</text>
+        </view>
+        <view class="flex-row">
+          <text>{{book_available}}</text>
+        </view>
+        <view class="hr"></view>
+      </view>
+  </view>
+</template>
+
+
+<template name="keylistTemplate">
+  <view class="book-list-container">
+    <view class="inner-container">
+      <view class="book-head">
+        <text class="bookName">{{key}}</text>
+      </view>
+      <view class="book-summary">
+        <text class="bookSummary">搜索次数：  {{times}}</text>
+      </view>
+      <view class="hr"></view>
+
+    </view>
+  </view>
+</template>
+
+

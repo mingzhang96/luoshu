@@ -1,0 +1,53 @@
+
+.book-list-container {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.book-head {
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  /*display:flex;
+  flex-direction: row;
+  justify-content:space-between;*/
+}
+
+.bookName {
+  font-size: 24rpx;
+}
+
+.bookSummary {
+  font-size: 18rpx;
+}
+
+.more {
+  float: right;
+}
+
+.more-text {
+  vertical-align: middle;
+  margin-right: 10rpx;
+  color: #1f4ba5;
+}
+
+.more-img {
+  width: 9rpx;
+  height: 16rpx;
+  vertical-align: middle;
+}
+
+.movies-container{
+    display:flex;
+    flex-direction: row;
+    white-space:nowrap;
+}
+
+.star-img{
+    height: 17px;
+    width: 17px;
+}

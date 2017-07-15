@@ -1,0 +1,12 @@
+<!--borrow_info.wxml-->
+<import src="../../template/bookListTemplate.wxml" />
+
+<text>目前借书： {{amount}} 本</text>
+
+<view class="container-show">
+  <block wx:for="{{bookList}}">
+    <view>
+      <template is="bookBorrowTemplate" data="{{...item}}"></template>
+    </view>
+  </block>
+</view>

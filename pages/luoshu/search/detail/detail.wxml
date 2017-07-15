@@ -1,0 +1,23 @@
+<!--detail.wxml-->
+<view class="bookDetail">
+    <!--<toast hidden="{{toastHidden}}" icon="info" bindchange="toastChange">收藏成功!</toast>-->
+      <!--书名 -->
+      <view class="book-head">
+        <text class="bookName" data-bookName="{{bookName}}">{{bookName}}</text>
+        <!--<icon type="success" size="20" color='green' bindtap="onStarImgTap"/>-->
+      </view>
+      <image src="{{bookImage}}"></image>
+      <!--书的内容简介 -->
+      <view class="flex-row">
+        <text class="mark">作者   </text>
+        <text>{{bookAuthor}}</text>
+      </view>
+      <view class="flex-row">
+        <text class="mark">出版社   </text>
+        <text>{{bookPublisher}}</text>
+      </view>
+      <view class="book-summary">
+        <text class="bookSummary" data-bookSummary="{{bookSummary}}">{{bookSummary}}</text>
+      </view>
+      
+</view>

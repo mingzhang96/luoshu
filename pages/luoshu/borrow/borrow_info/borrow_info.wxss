@@ -1,0 +1,33 @@
+/* borrow_info.wxss */
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10rpx;
+    font-size: 40rpx;
+}
+
+.book-head{
+    color: #1f3463;
+    font-size: 45rpx;
+    font-weight: bold;
+    margin-bottom: 40rpx;
+}
+
+.book-borrow-container{
+    margin-left:40rpx;
+    margin-top: 40rpx;
+    color: #777777;
+}
+
+.mark{
+    margin-right: 30rpx;
+    white-space:nowrap;
+    color: #999999;
+}
+
+.hr {
+  margin-top:45rpx;
+  height:1px;
+  width: 100%;
+  background-color: #d9d9d9;
+}

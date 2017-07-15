@@ -1,0 +1,10 @@
+<!--bookshelf.wxml-->
+<import src="../template/bookListTemplate.wxml" />
+
+<view class="container-show">
+  <block wx:for="{{keylist}}">
+    <view class="books-template">
+      <template is="keylistTemplate" data="{{...item}}"></template>
+    </view>
+  </block>
+</view>

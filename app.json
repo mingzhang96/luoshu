@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/luoshu/search/search",
+    "pages/luoshu/borrow/borrow",
+    "pages/luoshu/bookshelf/bookshelf",
+    "pages/luoshu/borrow/borrow_info/borrow_info",
+    "pages/luoshu/search/detail/detail"
+  ],
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#268dcd",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "pages/luoshu/search/search",
+        "iconPath": "image/search.png",
+        "selectedIconPath": "image/search_ing.png",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/luoshu/borrow/borrow",
+        "iconPath": "image/borrow.png",
+        "selectedIconPath": "image/borrow_ing.png",
+        "text": "借阅"
+      },
+      {
+        "pagePath": "pages/luoshu/bookshelf/bookshelf",
+        "iconPath": "image/bookshelf.png",
+        "selectedIconPath": "image/bookshelf_ing.png",
+        "text": "统计"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "落书",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,12 @@
+<!--borrow.wxml-->
+<view class="container">
+
+  <!--input.wxml-->
+  <toast hidden="{{toastHidden}}" icon="info" bindchange="toastChange">请输入正确的学号和密码</toast>
+  <view class="section">
+    <input maxlength="10" placeholder="学号" bindinput="bindSearchNumberInput" auto-focus/>
+    <input password type="text" bindinput="bindSearchPasswordInput" placeholder="密码" />
+    <button type="primary" size="default" loading="{{loading}}" bindtap="bindSearchTap"> 查询我的借阅信息 </button>
+  </view>
+
+</view>

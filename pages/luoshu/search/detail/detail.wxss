@@ -1,0 +1,28 @@
+/* detail.wxss */
+.mark{
+    margin-right: 30rpx;
+    white-space:nowrap;
+    color: #999999;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10rpx;
+    font-size: 30rpx;
+}
+
+.book-head{
+    color: #1f3463;
+    font-size: 45rpx;
+    font-weight: bold;
+    margin-bottom: 40rpx;
+}
+
+.bookSummary {
+  font-size: 25rpx;
+}
+
+.bookDetail {
+  margin: 20rpx 20rpx 20rpx 20rpx;
+}

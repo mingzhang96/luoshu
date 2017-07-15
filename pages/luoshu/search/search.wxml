@@ -1,0 +1,28 @@
+<!--first.wxml-->
+<import src="../template/bookListTemplate.wxml" />
+
+<toast hidden="{{toastHidden}}" icon="info" bindchange="toastChange">没有找到搜索结果~</toast>
+
+<view class="search">
+  <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+  <input type="text" placeholder="输入书名" placeholder-class="placeholder" bindfocus="onBindFocus" bindblur="onBindBlur"/>
+  <image wx:if="{{searchPanelShow}}" src="/image/xx.png" class="xx-img" bindtap="onCancelImgTap"></image>
+</view>
+
+
+<view wx:if="{{containerShow}}" class="container-show">
+  <block wx:for="{{bookList}}">
+    <view class="books-template" bindtap="moredetail" data-booksid="{{item.book_sid}}">
+      <template is="bookListTemplate" data="{{...item}}"></template>
+    </view>
+  </block>
+</view>
+
+
+<view wx:if="{{searchPanelShow}}" class="search-panel">
+  <block wx:for="{{searchResult}}">
+    <view class="books-template" bindtap="moredetail" data-booksid="{{item.book_sid}}">
+      <template is="bookGridTemplate" data="{{...item}}"/>
+    </view>
+  </block>
+</view>

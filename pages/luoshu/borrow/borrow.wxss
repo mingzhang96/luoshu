@@ -1,0 +1,15 @@
+/* borrow.wxss */
+input {
+  height: 100%;
+  width: 600rpx;
+  margin: 20rpx, 20rpx, 40rpx, 20rpx;
+  padding-bottom: 40rpx;
+  font-size: 40rpx;
+}
+
+button {
+  height: 100%;
+  width: 600rpx;
+  margin-left: 20px;
+  font-size: 40rpx;
+}
