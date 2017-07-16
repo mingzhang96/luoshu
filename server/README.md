@@ -5,6 +5,19 @@ Python 3.6
 Anaconda 3
 Django 1.11
 ```
+## 开发环境部署
+
+1.开发机
+```shell
+pip freeze > requirements.txt
+```
+2.服务器
+```
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+cd serverapi(部署目录)
+pip install -r requirements.txt
+```
 
 ## 守护进程
 ```
